@@ -1,3 +1,5 @@
-# Create T3 App
+# Linear Calendars
 
-This is an app bootstrapped according to the [init.tips](https://init.tips) stack, also known as the T3-Stack.
+Linyear generates linear calendars like the below.
+
+![Linear Calendar Example](./example_1.png)
