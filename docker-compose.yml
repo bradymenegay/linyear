@@ -7,7 +7,7 @@ services:
       - 3000
     labels:
       - "traefik.http.routers.linyear.tls.certresolver=le"
-      - "traefik.http.routers.linyear.rule=Host(`bradymenegay.com`) && Path(`/linyear`)"
+      - "traefik.http.routers.linyear.rule=Host(`linyear.bradymenegay.com`)"
 
 networks:
   default:
