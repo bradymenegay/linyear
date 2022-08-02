@@ -10,7 +10,7 @@ COPY --chown=node:node . .
 USER node
 
 RUN npm install --frozen-lockfile
-RUN npm build
+RUN npm run build
 
 EXPOSE 3000
 CMD [ "npm", "start" ]
