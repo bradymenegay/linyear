@@ -1,0 +1,15 @@
+version: "3"
+services:
+  node:
+    build: ./
+    image: linyear
+    ports:
+      - 3000
+    labels:
+      - "traefik.http.routers.linyear.tls.certresolver=le"
+      - "traefik.http.routers.linyear.rule=Host(`bradymenegay.com`) && Path(`/linyear`)"
+
+networks:
+  default:
+    name: "traefik_default"
+    external: true
