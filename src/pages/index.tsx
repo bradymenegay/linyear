@@ -228,7 +228,7 @@ const Home = () => {
     }
 
     calendar.push(
-      <div className="grid grid-cols-landscapeCal text-[.55rem]">
+      <div key={monthIdx} className="grid grid-cols-landscapeCal text-[.55rem]">
         <DayCell config={config.month} key={monthIdx}>
           {monthName}
         </DayCell>
@@ -271,9 +271,7 @@ const Home = () => {
 
         <div className="col-span-full p-[1px] min-w-[1000px] overflow-x-auto bg-gray-200">
           <h1>
-            {(startDate.getMonth() + 1).toLocaleString("default", {
-              month: "long",
-            }) +
+            {(startDate.getMonth() + 1).toLocaleString("default", {month: "long"}) +
               "/" +
               startDate.getFullYear() +
               " - " +

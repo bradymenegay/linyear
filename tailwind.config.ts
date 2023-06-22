@@ -1,8 +1,7 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+import { type Config } from "tailwindcss";
+
+export default {
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       gridTemplateColumns: {
@@ -12,4 +11,4 @@ module.exports = {
     }
   },
   plugins: [],
-}
+} satisfies Config;
